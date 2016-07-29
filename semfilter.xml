@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<executable>
+    <category>Example</category>
+    <title>Smoothing Filter</title>
+    <description>Smoothing filter for 2D and 3D images</description>
+    <version>1.0</version>
+    <contributor>Gaetan Belhomme</contributor>
+
+    <parameters>
+        <image>
+            <name>inputImageName</name>
+            <label>Input Image</label>
+            <channel>input</channel>
+            <index>0</index>
+            <description>Input image to be filtered</description>
+        </image>
+        <integer>
+            <name>dim</name>
+            <description>Image dimension</description>
+            <label>Image Dimension</label>
+            <index>1</index>
+            <contraint>
+                <minimum>2</minimum>
+                <maximum>3</maximum>
+                <step>1</step>
+            </contraints>
+        </integer>
+        <integer>
+            <name>neighbours</name>
+            <description>Neighbours used to filtered</description>
+            <label>Neighbours</label>
+            <index>2</index>
+            <contraint>
+                <minimum>4</minimum>
+                <maximum>8</maximum>
+                <step>4</step>
+            </contraints>
+        </integer>
+    <parameters>
+</executable>
